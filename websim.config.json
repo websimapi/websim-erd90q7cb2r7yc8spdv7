@@ -1,0 +1,31 @@
+{
+  "database": {
+    "schema": {
+      "wees": {
+        "id": {
+          "type": "uuid",
+          "description": "The unique identifier for the Wee"
+        },
+        "user_id": {
+          "type": "text",
+          "description": "The ID of the user who created the Wee"
+        },
+        "image_url": {
+          "type": "text",
+          "description": "URL of the AI-generated Wee image"
+        }
+      },
+      "wee_history": {
+        "id": {
+          "type": "text",
+          "description": "The user's ID, serving as the primary key"
+        },
+        "history": {
+          "type": "jsonb",
+          "description": "An array of objects, each containing a Wee image URL and a timestamp"
+        }
+      }
+    }
+  }
+}
+
